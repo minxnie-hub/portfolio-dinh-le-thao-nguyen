@@ -1,0 +1,281 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Tối ưu hóa tác vụ học tập bằng prompt cơ bản, cải tiến và nâng cao."><title>Viết Prompt hiệu quả cho tác vụ học tập | Đinh Lê Thảo Nguyên</title><link rel="icon" href="assets/monogram.svg"><link rel="stylesheet" href="styles.css"></head><body id="top" class="work-page"><div class="grain" aria-hidden="true"></div><header class="site-header"><a class="brand" href="index.html" aria-label="Về trang chủ"><span class="brand-mark">DN</span><span><b>Thảo Nguyên</b><small>Digital portfolio</small></span></a><button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">Menu</button><nav class="main-nav"><a href="index.html#about">Giới thiệu</a><a href="index.html#works">6 bài tập</a><a href="du-an-mo-rong.html">Dự án mở rộng</a><a href="tong-ket.html">Tổng kết</a></nav></header><main><section class="page-hero"><div class="page-index">04</div><div><p class="eyebrow">Bài tập 4 · Prompt Engineering · 3S</p><h1>Viết Prompt hiệu quả cho tác vụ học tập</h1><p class="lead">Tối ưu hóa tác vụ học tập bằng prompt cơ bản, cải tiến và nâng cao.</p></div><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/><path d="m17 15 2 2"/></svg></section><div class="reading-shell"><aside class="toc"><span>Trong bài này</span><div class="toc-links"></div><a class="back-link" href="index.html#works">← Danh sách bài tập</a></aside><article class="document-content"><h1 class="report-title">
+BÁO
+CÁO THỰC HÀNH: TỐI ƯU HÓA QUY TRÌNH HỌC TẬP QUA KỸ
+THUẬT PROMPT ENGINEERING</h1>
+<p>
+<b>Họ
+tên sinh viên:</b>
+Đinh Lê Thảo Nguyên</p>
+<p>
+<b>Mã
+sinh viên:</b>
+25051013</p>
+<h2>
+
+I.
+LỰA CHỌN VÀ PHÂN TÍCH TÁC VỤ HỌC TẬP</h2>
+<p>
+Để
+đạt hiệu quả cao trong học tập tại UEB, tôi lựa chọn
+3 tác vụ chiến lược. Việc phân tích bản chất tác vụ
+giúp xây dựng nền tảng vững chắc cho việc viết
+prompt:</p>
+<ol>
+<li><p>
+Tác
+	vụ 1: Tóm tắt tài liệu học thuật (Literature Review
+	Summary)</p></li>
+</ol>
+<ol>
+<ul>
+<li><p>
+Mục
+		tiêu: Trích xuất các biến số, mô hình và kết luận
+		từ các bài báo khoa học dài.</p></li>
+<li><p>
+Thách
+		thức: AI dễ bỏ qua các điều kiện biên (constraints)
+		hoặc phương pháp luận (methodology) nếu chỉ tóm tắt
+		bề nổi.</p></li>
+</ul>
+</ol>
+<ol>
+<li><p>
+Tác
+	vụ 2: Giải thích khái niệm kinh tế phức tạp qua ví dụ
+	thực tế</p></li>
+</ol>
+<ol>
+<ul>
+<li><p>
+Mục
+		tiêu: Chuyển đổi ngôn ngữ hàn lâm thành tri thức ứng
+		dụng.</p></li>
+<li><p>
+Thách
+		thức: AI thường định nghĩa theo từ điển; thách thức
+		là làm sao để AI đưa ra các so sánh (analogy) gần gũi
+		với bối cảnh kinh tế Việt Nam.</p></li>
+</ul>
+</ol>
+<ol>
+<li><p>
+Tác
+	vụ 3: Thiết kế bộ câu hỏi ôn tập dựa trên Case
+	Study</p></li>
+</ol>
+<ol>
+<ul>
+<li><p>
+Mục
+		tiêu: Tạo môi trường tự kiểm tra ở mức độ vận
+		dụng cao (Application &amp; Analysis).</p></li>
+<li><p>
+Thách
+		thức: Cần tránh các câu hỏi học vẹt; AI phải biết
+		giả lập tình huống thực tế của doanh nghiệp để
+		đặt câu hỏi.</p></li>
+</ul>
+</ol>
+<h2>
+
+II.
+XÂY DỰNG VÀ THỬ NGHIỆM CÁC PHIÊN BẢN PROMPT</h2>
+<p>
+Tôi
+sử dụng ChatGPT-4o làm công cụ thử nghiệm chính để so
+sánh sự khác biệt về chất lượng đầu ra.</p>
+<h3>
+2.1.
+Tác vụ: Giải thích khái niệm "Hàm thỏa dụng
+(Utility Function)"</h3>
+<ul>
+<li><p>
+Prompt
+	Cơ bản: "Giải thích hàm thỏa dụng trong kinh tế
+	học."</p></li>
+<li><p>
+Prompt
+	Cải tiến: "Giải thích hàm thỏa dụng và cho ví dụ
+	về việc tiêu dùng hàng hóa thông thường."</p></li>
+<li><p>
+Prompt
+	Nâng cao (Role + Analogy + CoT): &gt; <i>"Bạn
+	là một gia sư kinh tế học tài năng. Hãy giải thích
+	khái niệm 'Hàm thỏa dụng' cho một sinh viên năm nhất
+	đang gặp khó khăn. Sử dụng một phép ẩn dụ liên quan
+	đến việc đi ăn buffet. Hãy giải thích theo trình tự:
+	1. Bản chất của sự thỏa mãn. 2. Tại sao thỏa dụng
+	biên lại giảm dần. 3. Kết luận về cách tối ưu hóa
+	sự lựa chọn. Hãy suy nghĩ từng bước."</i></p></li>
+</ul>
+<h3>
+2.2.
+Tác vụ: Tóm tắt báo cáo thị trường</h3>
+<ul>
+<li><p>
+Prompt
+	Cơ bản: "Tóm tắt đoạn văn sau: [Nội dung]."</p></li>
+<li><p>
+Prompt
+	Cải tiến: "Tóm tắt văn bản này thành 5 ý chính,
+	tập trung vào các số liệu doanh thu và xu hướng thị
+	trường."</p></li>
+<li><p>
+Prompt
+	Nâng cao (Few-shot + Structure):<i>"Tôi
+	cần tóm tắt các báo cáo thị trường theo cấu trúc:
+	[Thị trường] - [Số liệu then chốt] - [Dự báo tương
+	lai]. Ví dụ: Cà phê - Tăng trưởng 5% - Xu hướng tiêu
+	dùng bền vững. Bây giờ, hãy tóm tắt văn bản sau theo
+	đúng cấu trúc trên: [Nội dung báo cáo]."</i></p></li>
+</ul>
+<h2>
+
+III.
+THỬ NGHIỆM VÀ SO SÁNH KẾT QUẢ (PHÂN TÍCH TINH TẾ)</h2>
+<p>
+Dựa
+trên kết quả thực hiện, tôi đánh giá sự khác biệt
+giữa các phiên bản như sau:</p>
+<div class="table-wrap"><table>
+<col/>
+<col/>
+<col/>
+<col/>
+<tr>
+<td><p>
+Tiêu
+			chí</p>
+</td>
+<td><p>
+Prompt
+			Cơ bản</p>
+</td>
+<td><p>
+Prompt
+			Cải tiến</p>
+</td>
+<td><p>
+Prompt
+			Nâng cao</p>
+</td>
+</tr>
+<tr>
+<td><p>
+Độ
+			chính xác</p>
+</td>
+<td><p>
+Đúng
+			định nghĩa nhưng khô khan.</p>
+</td>
+<td><p>
+Đầy
+			đủ thông tin cơ bản.</p>
+</td>
+<td><p>
+Chính
+			xác và có tính liên kết hệ thống.</p>
+</td>
+</tr>
+<tr>
+<td><p>
+Sắc
+			thái (Nuance)</p>
+</td>
+<td><p>
+Giống
+			một cuốn từ điển mở.</p>
+</td>
+<td><p>
+Giống
+			một bài báo tóm tắt.</p>
+</td>
+<td><p>
+Giống
+			một chuyên gia đang tư vấn.</p>
+</td>
+</tr>
+<tr>
+<td><p>
+Khả
+			năng áp dụng</p>
+</td>
+<td><p>
+Thấp,
+			chỉ dùng để biết.</p>
+</td>
+<td><p>
+Trung
+			bình, dùng để ôn tập.</p>
+</td>
+<td><p>
+Cao,
+			dùng để đưa vào bài thảo luận.</p>
+</td>
+</tr>
+</table></div>
+<p>
+Nhận
+định sâu sắc: Prompt nâng cao tạo ra sự khác biệt lớn
+ở "Khả năng cá nhân hóa kiến thức". Khi gán
+vai trò và yêu cầu suy nghĩ theo chuỗi (CoT), AI không chỉ
+đưa ra thông tin mà còn giải thích tại sao thông tin đó
+lại quan trọng trong ngữ cảnh đã thiết lập.</p>
+<h2>
+
+IV.
+PHÂN TÍCH HIỆU QUẢ VÀ TƯ DUY PHẢN BIỆN</h2>
+<p>
+Sở
+dĩ các Prompt nâng cao đạt kết quả vượt trội là do sự
+kết hợp của 3 yếu tố:</p>
+<ol>
+<li><p>
+Giới
+	hạn không gian tìm kiếm: Khi dùng kỹ thuật Role
+	Prompting, AI sẽ "tắt" các kho dữ liệu không
+	liên quan (như giải trí, đời sống) để tập trung vào
+	kho tri thức chuyên sâu (Kinh tế, Quản trị).</p></li>
+<li><p>
+Khung
+	cấu trúc (Few-shot): Việc đưa ra ví dụ mẫu giúp AI hiểu
+	"khẩu vị" của người dùng, từ đó loại bỏ
+	các câu trả lời rườm rà.</p></li>
+<li><p>
+Kiểm
+	soát logic (CoT): Việc yêu cầu "suy nghĩ từng bước"
+	giúp AI duy trì sự nhất quán, tránh tình trạng "ảo
+	tưởng" (hallucination) khi xử lý các dữ liệu kinh tế
+	phức tạp.</p></li>
+</ol>
+<h2>
+
+V.
+TỔNG HỢP NGUYÊN TẮC VÀ MẸO VIẾT PROMPT (CẨM NANG SINH
+VIÊN UEB)</h2>
+<p>
+Qua
+quá trình thực nghiệm, tôi đúc rút bộ nguyên tắc "3S"
+để viết prompt hiệu quả:</p>
+<ul>
+<li><p>
+S1
+	- Specific (Cụ thể): Luôn đi kèm các ràng buộc về độ
+	dài và định dạng.</p></li>
+<li><p>
+S2
+	- Strategic Role (Vai trò chiến lược): Đừng chỉ coi AI là
+	máy công cụ, hãy coi nó là một "Cộng sự chuyên
+	gia".</p></li>
+<li><p>
+S3
+	- Smart Feedback (Phản hồi thông minh): Nếu AI trả lời
+	chưa đúng ý, đừng viết lại prompt mới từ đầu. Hãy
+	sử dụng câu lệnh: <i>"Bạn
+	đã làm tốt phần A, nhưng phần B cần thực tế hơn,
+	hãy thử lại."</i></p></li>
+</ul>
+
+</article></div><nav class="page-pager"><a href="bai-3.html">← Bài trước</a><a href="bai-5.html">Bài tiếp theo →</a></nav></main><footer class="site-footer"><div><strong>Đinh Lê Thảo Nguyên</strong><p>KTQT 7 · 25051013 · UEB – VNU</p></div><a href="#top">Lên đầu trang ↑</a></footer><script src="app.js"></script></body></html>
